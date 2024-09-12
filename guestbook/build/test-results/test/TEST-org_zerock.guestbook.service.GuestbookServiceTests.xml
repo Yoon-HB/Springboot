@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org_zerock.guestbook.service.GuestbookServiceTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-01T01:50:53" hostname="DESKTOP-28J1KHI" time="0.955">
+  <properties/>
+  <testcase name="testSearch()" classname="org_zerock.guestbook.service.GuestbookServiceTests" time="0.955"/>
+  <system-out><![CDATA[10:50:49.625 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org_zerock.guestbook.service.GuestbookServiceTests]: GuestbookServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:50:49.722 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org_zerock.guestbook.GuestbookApplication for test class org_zerock.guestbook.service.GuestbookServiceTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-01T10:50:49.986+09:00  INFO 20980 --- [guestbook] [    Test worker] o.g.service.GuestbookServiceTests        : Starting GuestbookServiceTests using Java 17.0.10 with PID 20980 (started by User in D:\java\springboot\guestbook)
+2024-08-01T10:50:49.987+09:00  INFO 20980 --- [guestbook] [    Test worker] o.g.service.GuestbookServiceTests        : No active profile set, falling back to 1 default profile: "default"
+2024-08-01T10:50:50.473+09:00  INFO 20980 --- [guestbook] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-01T10:50:50.530+09:00  INFO 20980 --- [guestbook] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-08-01T10:50:51.091+09:00  INFO 20980 --- [guestbook] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-01T10:50:51.132+09:00  INFO 20980 --- [guestbook] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-01T10:50:51.168+09:00  INFO 20980 --- [guestbook] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-01T10:50:51.432+09:00  INFO 20980 --- [guestbook] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-01T10:50:51.450+09:00  INFO 20980 --- [guestbook] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-01T10:50:51.453+09:00  WARN 20980 --- [guestbook] [    Test worker] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-08-01T10:50:51.733+09:00  INFO 20980 --- [guestbook] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48692405
+2024-08-01T10:50:51.735+09:00  INFO 20980 --- [guestbook] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-01T10:50:52.439+09:00  INFO 20980 --- [guestbook] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-01T10:50:52.469+09:00  INFO 20980 --- [guestbook] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-01T10:50:53.058+09:00  WARN 20980 --- [guestbook] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-01T10:50:53.096+09:00  INFO 20980 --- [guestbook] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-01T10:50:53.670+09:00  INFO 20980 --- [guestbook] [    Test worker] o.g.service.GuestbookServiceTests        : Started GuestbookServiceTests in 3.844 seconds (process running for 5.024)
+Hibernate: 
+    select
+        g1_0.gno,
+        g1_0.content,
+        g1_0.modate,
+        g1_0.regdate,
+        g1_0.title,
+        g1_0.writer 
+    from
+        guestbook g1_0 
+    where
+        g1_0.gno>? 
+        and (
+            g1_0.title like ? escape '!' 
+            or g1_0.content like ? escape '!'
+        ) 
+    order by
+        g1_0.gno desc 
+    limit
+        ?, ?
+PREV: false
+NEXT: false
+TOTAL: 0
+........................................................................
+========================================
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

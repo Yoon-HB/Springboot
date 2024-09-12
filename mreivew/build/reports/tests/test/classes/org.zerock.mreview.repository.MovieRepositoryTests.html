@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MovieRepositoryTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MovieRepositoryTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.zerock.mreview.repository.html">org.zerock.mreview.repository</a> &gt; MovieRepositoryTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.519s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGetMovieWithAll()</td>
+<td class="success">0.519s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:08:29.757 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.zerock.mreview.repository.MovieRepositoryTests]: MovieRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:08:29.844 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.zerock.mreview.MreviewApplication for test class org.zerock.mreview.repository.MovieRepositoryTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-21T12:08:30.102+09:00  INFO 8628 --- [mreview] [    Test worker] o.z.m.repository.MovieRepositoryTests    : Starting MovieRepositoryTests using Java 17.0.10 with PID 8628 (started by User in D:\java\springboot\mreivew)
+2024-08-21T12:08:30.103+09:00  INFO 8628 --- [mreview] [    Test worker] o.z.m.repository.MovieRepositoryTests    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-08-21T12:08:30.560+09:00  INFO 8628 --- [mreview] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-21T12:08:30.610+09:00  INFO 8628 --- [mreview] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2024-08-21T12:08:31.158+09:00  INFO 8628 --- [mreview] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-21T12:08:31.227+09:00  INFO 8628 --- [mreview] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-21T12:08:31.267+09:00  INFO 8628 --- [mreview] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-21T12:08:31.619+09:00  INFO 8628 --- [mreview] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-21T12:08:31.645+09:00  INFO 8628 --- [mreview] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-21T12:08:31.849+09:00  INFO 8628 --- [mreview] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a2798a2
+2024-08-21T12:08:31.851+09:00  INFO 8628 --- [mreview] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-21T12:08:32.603+09:00  INFO 8628 --- [mreview] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-21T12:08:32.663+09:00  INFO 8628 --- [mreview] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T12:08:32.886+09:00  INFO 8628 --- [mreview] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-21T12:08:33.676+09:00  WARN 8628 --- [mreview] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-21T12:08:34.204+09:00  INFO 8628 --- [mreview] [    Test worker] o.z.m.repository.MovieRepositoryTests    : Started MovieRepositoryTests in 4.245 seconds (process running for 5.075)
+Hibernate: 
+    select
+        m1_0.mno,
+        m1_0.moddate,
+        m1_0.regdate,
+        m1_0.title,
+        mi1_0.inum,
+        mi1_0.img_name,
+        mi1_0.moddate,
+        mi1_0.movie_mno,
+        mi1_0.path,
+        mi1_0.regdate,
+        mi1_0.uuid,
+        avg(coalesce(r1_0.grade, 0)),
+        count(distinct r1_0.reviewnum) 
+    from
+        movie m1_0 
+    left join
+        movie_image mi1_0 
+            on mi1_0.movie_mno=m1_0.mno 
+    left join
+        review r1_0 
+            on r1_0.movie_mno=m1_0.mno 
+    where
+        m1_0.mno=? 
+    group by
+        mi1_0.inum
+[[Ljava.lang.Object;@61736817]
+[Movie(mno=97, title=Movie...97), MovieImage(inum=297, uuid=df3341cc-88d4-49c3-aeac-50c418b0c8ee, imgName=test0.jpg, path=null), 3.6667, 3]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 8. 21. 오후 12:08:34</p>
+</div>
+</div>
+</body>
+</html>
